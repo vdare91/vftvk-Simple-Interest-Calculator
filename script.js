@@ -26,7 +26,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 
     //Update the result element with the computed results
-    document.getElementById("result").innerHTML = "\<br\>If you deposit \<strong\>"+principal.value+"\</strong\>\<br\>at an interest rate of \<strong\>"+rate+"%\</strong\>.\<br\>You will receive an amount of \<strong\>"+interest+"\</strong\>,\<br\>in the year \<strong\>"+year+"\</strong\>\<br\>";
+    document.getElementById("result").innerHTML = "\<br\>If you deposit \<span class='highlight'\>"+principal.value+"\</span\>\<br\>at an interest rate of \<span class='highlight'\>"+rate+"%\</span\>.\<br\>You will receive an amount of \<span class='highlight'\>"+interest+"\</span\>,\<br\>in the year \<span class='highlight'\>"+year+"\</span\>\<br\>";
 
     //Return true and allow submitting the form if validation passes
     return true;
